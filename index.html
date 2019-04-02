@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Earth-World Clock</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" href="stylesheet.css" rel="stylesheet" />
+		<link type="text/css" href="layout.css" rel="stylesheet" />
+	</head>
+	<body>
+
+		<header class="grid-item header">
+			<div class="logodiv"><img alt="SpaceX" class="logo" src="images/logo.png" /></div>
+		</header>
+					<form>
+			<fieldset>
+				<legend>Get current weather</legend>
+				<label for="stad">City:</label>
+				<input type="text" name="stad" id="stad" />
+				<input type="button" id="getWeather" value="get current weather" />
+			</fieldset>
+		</form>
+		<main class="grid-item main">
+			<div class="flex-container">
+				<h1>Weer informatie</h1>
+				<div class="weerinfo-divjes" id="temperatuur"></div>
+				<div class="weerinfo-divjes" id="luchtdruk"></div>
+				<div class="weerinfo-divjes" id="windsnelheid"></div>
+			</div>
+<div id='map'></div>
+
+		</main>
+		<footer class="grid-item foot">
+			<div class="footerdiv">SpaceX - 2019</div>
+		</footer>
+		<script src="scripts/main.js"></script>
+		
+    <script src="https://maps.googleapis.com/maps/api/js?AIzaSyDJd-WM0BjAP4UOEkd1WYE4YJXjwo-hzog&callback=initMap"
+        async defer></script>
+
+	</body>
+</html>

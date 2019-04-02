@@ -1,0 +1,86 @@
+@media only screen and (max-width: 568px){
+
+
+.header{
+  grid-area: header;
+}
+
+.main{
+  grid-area: main;
+}
+
+body{
+	  grid-template-columns: 1fr 1fr;
+	  grid-template-areas: 
+	  	"header header"
+        "main main"
+        "foot foot"
+;
+}
+
+.header {
+	background-color: rgb(7, 57, 93);
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.logodiv {
+	margin-top: -20px;
+}
+
+.logo {
+width: 250px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: -10px;
+}
+
+
+.weerinfo-divjes{
+  font-family: Robotica;
+  text-align: center;
+  font-size: 30px;
+  background-color: red;
+  width: 50%;
+  height: 100px;
+  border: 5px solid black;
+  padding: 25px;
+  margin: 10px;
+}
+
+
+.flex-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: column wrap;
+   align-content: center;
+  }
+
+
+
+#map{
+  width: 100%;
+  height: 400px;
+}
+
+
+
+
+
+
+.footerdiv {
+
+   bottom:0;
+   width:100%;
+
+   margin-right: -10%;
+   height:60px;   /* Height of the footer */
+   color: white;
+   padding-top: 10px;
+
+   text-align: center;
+   background-color: #0e1112;
+}
+

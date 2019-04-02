@@ -1,0 +1,120 @@
+@font-face{
+	font-family: digital;
+	src:url(fonts/digital-7.ttf);
+}
+
+body{
+	background-color: #003B59;
+	color: #FFFFFF;
+  font-family: avenir, sans-serif;
+}
+
+
+@media only screen and (min-width: 569px) {
+
+body{
+	background-position: relative;
+	background-image: left 10%;
+	  grid-template-columns: 1fr 1fr 1fr;
+	  grid-template-areas: 
+	  	"header header"
+        "main main"
+        "foot foot";
+}
+
+
+.header {
+	background-color: rgb(7, 57, 93);
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.logodiv {
+	margin-top: -20px;
+}
+
+.logo {
+	width: 250px;
+	display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: -10px;
+
+}
+
+
+main{
+	margin-left: 15%;
+	
+}
+
+
+
+.footerdiv {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   margin-left: -10px;
+   margin-right: -10%;
+   height:10px;   /* Height of the footer */
+   color: white;
+   padding-top: 10px;
+
+   text-align: center;
+   background-color: #0e1112;
+}
+
+
+
+
+
+@media only screen and (min-width: 820px) {
+
+body{
+	background-position: relative;
+	background-image: left 10%;
+	  grid-template-columns: 1fr 1fr 1fr;
+	  grid-template-areas: 
+	  	"header header"
+        "main main"
+        "klok klok";
+}
+
+
+.header {
+	background-color: rgb(7, 57, 93);
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.logodiv {
+	margin-top: -20px;
+}
+
+.logo {
+	width: 250px;
+	display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: -10px;
+}
+
+
+main{
+	margin-left: 15%;
+	
+}
+
+.footerdiv {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   margin-left: -10px;
+   margin-right: -10%;
+   height:60px;   /* Height of the footer */
+   color: white;
+   padding-top: 10px;
+
+   text-align: center;
+   background-color: #0e1112;
+}
