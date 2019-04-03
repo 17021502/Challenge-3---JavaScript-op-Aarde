@@ -39,10 +39,11 @@ function onAPISucces(response) {
 
 	// render weather in DOM
 	var weatherBox = document.getElementById('temperatuur');
-	weatherBox.innerHTML = degC + "&#176;C <br>" + type;
+	weatherBox.innerHTML = degC + "&#176;C <br>";
 
 document.getElementById('windsnelheid').innerHTML = response.wind.speed + ' m/s' ; 
 document.getElementById('luchtdruk').innerHTML = response.main.pressure + ' hPa' ; 
+document.getElementById('bewolking').innerHTML = type ; 
 
 }
 
@@ -55,7 +56,7 @@ var options = {
 	}
 
 var map = new google.maps.Map(document.getElementById('map'), options);
-var marker = new google.maps.Marker({position:{lat:52.3680,lng:4.9036},map:map
+var marker = new google.maps.Marker({position:{lat:52.3680,lng:4.5036},map:map
 });
 }
 

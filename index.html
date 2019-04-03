@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Earth-World Clock</title>
+		<title>Stad scanner</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link type="text/css" href="stylesheet.css" rel="stylesheet" />
 		<link type="text/css" href="layout.css" rel="stylesheet" />
@@ -13,23 +13,39 @@
 			<div class="logodiv"><img alt="SpaceX" class="logo" src="images/logo.png" /></div>
 		</header>
 					<form>
-			<fieldset>
-				<legend>Get current weather</legend>
-				<label for="stad">City:</label>
+			<fieldset class="form">
+				<legend class="legend">Voer de stadsnaam in</legend>
 				<input type="text" name="stad" id="stad" />
-				<input type="button" id="getWeather" value="get current weather" />
+				<input type="button" id="getWeather" value="Get Data" />
 			</fieldset>
 		</form>
 		<main class="grid-item main">
+			<h1 class="titels">Weer informatie</h1>
 			<div class="flex-container">
-				<h1>Weer informatie</h1>
-				<div class="weerinfo-divjes" id="temperatuur"></div>
-				<div class="weerinfo-divjes" id="luchtdruk"></div>
-				<div class="weerinfo-divjes" id="windsnelheid"></div>
+				
+				<div><h1 class="weerinfo-titels">Temperatuur</h1>
+					<div class="weerinfo-divjes" id="temperatuur">Stad?</div>
+				</div>
+
+				<div><h1 class="weerinfo-titels">Luchtdruk</h1>
+					<div class="weerinfo-divjes" id="luchtdruk">Stad?</div>
+				</div>
+
+				<div><h1 class="weerinfo-titels">Windsnelheid</h1>
+					<div class="weerinfo-divjes" id="windsnelheid">Stad?</div>
+				</div>
+
+				<div><h1 class="weerinfo-titels">Bewolking</h1>
+				<div class="weerinfo-divjes" id="bewolking">Stad?</div>
+				</div>
 			</div>
-<div id='map'></div>
+			<h1 class="titels">Landings locatie</h1>
+
 
 		</main>
+		<div class="grid-item map">
+			<div id='map'></div>
+		</div>
 		<footer class="grid-item foot">
 			<div class="footerdiv">SpaceX - 2019</div>
 		</footer>
